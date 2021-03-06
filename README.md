@@ -10,6 +10,7 @@ Keep this code to validate all inputs of GraphQL Query/Mutation.
 ValidatorSettings.ValdiateAllInputs = true;
 ```
 
+
 ### Step 3
 Add argument valdiator to services by referring below code
 ```
@@ -17,6 +18,7 @@ services
   .AddGraphQLServer()
   .AddArgumentValidator();
 ```
+
 
 ### Additional Configuration
 If you don't want to valdiate all inputs then you can skip step 2 and follow the optional step i.e
