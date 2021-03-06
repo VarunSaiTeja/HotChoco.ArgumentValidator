@@ -8,7 +8,7 @@ namespace HotChoco.ArgumentValidator
         public static IRequestExecutorBuilder AddArgumentValidator(
             this IRequestExecutorBuilder requestExecutorBuilder)
         {
-            requestExecutorBuilder.UseField<ArgumentValidationMiddleware>();
+            requestExecutorBuilder.UseField<ValidationMiddleware>();
 
             return requestExecutorBuilder;
         }

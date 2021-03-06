@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace HotChoco.ArgumentValidator
 {
-    class ArgumentValidationMiddleware
+    class ValidationMiddleware
     {
         private readonly FieldDelegate _next;
 
-        public ArgumentValidationMiddleware(FieldDelegate next)
+        public ValidationMiddleware(FieldDelegate next)
         {
             _next = next;
         }
