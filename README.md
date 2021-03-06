@@ -4,15 +4,11 @@
 ### Step 1
 Go to StartUp.cs file and inside ConfigureServices make the following changes.
 
----
-
 ### Step 2
 Keep this code to validate all inputs of GraphQL Query/Mutation.
 ```
 ValidatorSettings.ValdiateAllInputs = true;
 ```
-
----
 
 ### Step 3
 Add argument valdiator to services by referring below code
@@ -22,6 +18,7 @@ services
   .AddArgumentValidator();
 ```
 
+### Additional Configuration
 If you don't want to valdiate all inputs then you can skip step 2 and follow the optional step i.e
 
 Just add `Validatable` attribute to the class u defined for input.
