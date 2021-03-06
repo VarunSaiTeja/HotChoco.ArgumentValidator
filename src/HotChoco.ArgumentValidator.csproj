@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>$(LibraryTargetFrameworks)</TargetFrameworks>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>HotChocolate, HotChocolate.Valdiators, HotChocolate.Validations</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>

@@ -9,6 +9,7 @@
     <Product>$(MSBuildProjectName)</Product>
     <Description>Input Argument Validator for HotChocolate</Description>
     <Company>Varun Soft</Company>
+    <Title>$(MSBuildProjectName)</Title>
     <AssemblyName>$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>$(MSBuildProjectName)</RootNamespace>
     <LangVersion>latest</LangVersion>
