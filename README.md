@@ -34,10 +34,22 @@ Ex:
         [Required, RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Email Id format is invalid")]
         public string Email { get; set; }
 
-        [Required, RegularExpression(@"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$", ErrorMessage = "Password must be atleast 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character.")]
+        [Required, RegularExpression(@"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$", ErrorMessage = "Password needs to be more strong.")]
         public string Password { get; set; }
     }
 ```
 
 
-When user miss
+When user given wrong values to input, this is how the response from GraphQL Server will looks like
+```
+{
+  "errors": [
+    {
+      "message": "Username must be at least 4 characters."
+    },
+    {
+      "message": "Password needs to be more strong."
+    }
+  ]
+}
+```
