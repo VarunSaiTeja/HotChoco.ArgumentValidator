@@ -1,4 +1,9 @@
-# Adds support for validating input arguments in HotChocolate
+# This project recreated with new namespace to avoid collision with official packages
+Please visit below page for new project, and install the Graph.ArgumentValidator package
+## https://github.com/VarunSaiTeja/Graph.ArgumentValidator
+
+
+## Adds support for validating input arguments in HotChocolate
 
 Generally we use attributes from System.Annotations for validating our input models in controllers.
 
